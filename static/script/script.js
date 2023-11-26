@@ -13,6 +13,9 @@ function myfunction(){
     }
 }
 
+
+console.log("this is a console statement")
+
 var previousElement, colour;
 function box(number){
     let first = document.getElementsByClassName('l1')[0];
