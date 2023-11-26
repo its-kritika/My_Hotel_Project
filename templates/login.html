@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Login</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel = 'stylesheet' href = "{{ url_for('static', filename = 'css/style3.css') }}">
+    </head>
+    <body>
+        <div class = 'content'></div>
+            <div class = 'box'>
+                <div class = 'login_form'>
+                    <h1>Welcome to The Taj</h1>
+                    <p>Login page only for administrative purpose. Thank You!</p>
+                    <form action = "/welcome">
+                        <input type = 'text' name = 'username' placeholder = "Username" required><br>
+                        <input type = 'password' name = 'password' placeholder = "Password" required><br>
+                        <input type = 'checkbox' class = "checkbox"><span id = text>Remember Me</span><br>
+                        <input type = 'submit' value = 'Sign In' class = 'submit'>
+                    </form>
+                </div>
+                <div class = 'display'>
+                    <img src = '/static/images/login3.jpeg'>
+                </div>
+            </div>
+    </body>
+</html>

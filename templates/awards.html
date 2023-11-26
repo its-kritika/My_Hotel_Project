@@ -1,0 +1,222 @@
+<html>
+    <head>
+        <title>Awards</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel = 'stylesheet' href = "{{ url_for('static', filename = 'css/style4.css') }}">
+        <link rel = 'stylesheet' href = "{{ url_for('static', filename = 'css/style1.css') }}">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />     <!--for font awesome icons-->
+
+    </head>
+    <body id = 'content'>
+        <div id = 'container'>
+            <nav>
+                <div class = "navbar" id = 'mynavbar'>
+                    <a href ='/' class = 'logo'><img src='static\images\hotel_logo.png' height = '40px' width= '50px'></a>
+                    <span class ='icons menu' onclick = "myfunction()" >&#9776;</span> 
+                    <!--HTML icons code for dropdown for designing responsive web page-->
+                    <span class ='icons close' onclick = "myfunction()">&#10006;</span>
+                    <div class="navbar-collapse">
+                        <a href = "/our_hotels">Our Hotels</a>
+                        <a href = "/booking-details">Manage Booking</a>
+                        <a href = '/awards'>Awards</a> <!--change to Awards section see Oberoi hotel-->
+                        <a href = "/welcome" class="right">Contact Us</a>
+                        <a href = "/login" class="right">Sign In</a>
+                    </div>
+                </div>
+            </nav>
+
+            <div class = 'container1'></div>
+            
+            <div class = 'container2'>
+                <p class = 'heading'><i>Recognition</i></p>
+                <div class = 'flex'>
+                    
+                    <div class = 'award'>
+                        <p><b>World's Strongest Hotel Brand 2023</b></p>
+                        <p> Brand Finance</p>
+                        <p>Taj</p>
+                    </div>
+                    <div class = 'award'>
+                        <p><b>Ministry of Tourism, Government of India</b></p>
+                        <p>5-star Deluxe Hotel Category 2023</p>
+                        <p>Taj Mahal Palace, Mumbai</p>
+                    </div>
+                    <div class = 'award'>
+                        <p><b>Ministry of Tourism, Government of India</b></p>
+                        <p>5-star Hotel Category 2023</p>
+                        <p>The Gateway Hotel Vijayawada</p>
+                    </div>
+                    <div class = 'award'>
+                        <p><b>16th Hospitality India Annual International Travel Awards</b></p>
+                        <p>Best Wedding Destination</p>
+                        <p>Taj Lakefront Bhopal</p>
+                    </div>
+                    <div class = 'award'>
+                        <p><b>Dining Awards 2022</b></p>
+                        <p>Best Food Delivery Service</p>
+                        <p>Qmin</p>
+                    </div>
+                    <div class = 'award'>
+                        <p><b>Dining Awards 2022</b></p>
+                        <p>Best Bakery</p>
+                        <p>La Patisserie, The Taj Mahal Palace, Mumbai</p>
+                    </div>
+                    <div class = 'award'>
+                        <p><b>Dining Awards 2022</b></p>
+                        <p>Best Pan-Asian Cuisine</p>
+                        <p>Spicy Duck, The Taj Palace, New Delhi</p>
+                    </div>
+                    <div class = 'award'>
+                        <p><b>Dining Awards 2022</b></p>
+                        <p>Best Indian Cuisine</p>
+                        <p>Masala Kraft, The Taj Mahal Palace, Mumbai</p>
+                    </div>
+                    <div class = 'award'>
+                        <p><b>India's Leading Hotel 2022</b></p>
+                        <p>29th Annual World Travel award</p>
+                        <p>Taj Mahal, New Delhi</p>
+                    </div>
+                    <div class = 'award'>
+                        <p><b>India's Leading Palace Hotel 2022</b></p>
+                        <p>29th Annual World Travel award</p>
+                        <p>The Taj Mahal Palace, Mumbai</p>
+                    </div>
+                    <div class = 'award'>
+                        <p><b>India's Leading Conference Hotel 2022</b></p>
+                        <p>29th Annual World Travel award</p>
+                        <p>Taj Palace, New Delhi</p>
+                    </div>
+                    <div class = 'award'>
+                        <p><b>India's Leading Family Resort </b></p>
+                        <p>29th Annual World Travel award</p>
+                        <p>Taj Exotica Resort & Spa, Goa</p>
+                    </div>
+                    <div class = 'show_more' id = 'extra'>
+                        <div class = 'award'>
+                            <p><b>Ministry of Tourism, Government of India</b></p>
+                            <p>4-star Hotel Category 2022</p>
+                            <p>Taj Kumarakom, Kottayam, Kerala</p>
+                        </div>
+                        <div class = 'award'>
+                            <p><b>Best 100 Hotels in the World 2022</b></p>
+                            <p>The World's 50 Best Hotels Academy</p>
+                            <p>Taj Lake Palace, Udaipur</p>
+                        </div>
+                        <div class = 'award'>
+                            <p><b>Best City Hotels in India</b></p>
+                            <p>The World's 50 Best Hotels Academy</p>
+                            <p>Taj Palace, Delhi</p>
+                        </div>
+                        <div class = 'award'>
+                            <p><b>Conde Nast Traveler list 2022</b></p>
+                            <p>IHCL SeleQtions</p>
+                            <p>Pilibhit House, Haridwar</p>
+                        </div>
+                        <div class = 'award'>
+                            <p><b>Gold Standard Hotels 2014</b></p>
+                            <p>Condé Nast Traveler</p>
+                            <p>The Taj Mahal Palace, Mumbai</p>
+                        </div>
+                        <div class = 'award'>
+                            <p><b>Top 100 Hotels and Resorts in the World 2013</b></p>
+                            <p>Condé Nast Traveler</p>
+                            <p>Rambagh Palace, Jaipur</p>
+                        </div>
+                        <div class = 'award'>
+                            <p><b>Top 100 Hotels and Resorts in the World 2013</b></p>
+                            <p>Condé Nast Traveler</p>
+                            <p>The Taj Mahal Palace Hotel, Mumbai</p>
+                        </div>
+                    </div>
+                </div>
+                <span><button type = 'button' id = 'more' onclick = "my_function()">Show more</button></span>
+                <span><button type = 'button' id = 'less' onclick = 'my_function()' class = 'less1'>Show less</button></span>
+            </div>
+
+            <div class = 'footer'>
+                <p>Destinations +</p>
+                <hr style = "width: 90%; height: .2px; border: none; background-color: #606060;">
+                <div class = 'destination_box'>
+                    <div class = 'destination_box1'>
+                        <ul class = 'flex-list'>
+                            <div style = 'width: 35rem;'>
+                                <li>Airline & Frequent Flyer Partners</li>
+                                <li>Taj Magazine</li> 
+                                <li>J Wellness Circle</li> 
+                                <li>Site Map</li> 
+                                <li>Terms Of Use</li> 
+                                <li>Contact Us</li> 
+                            </div>
+                            <div style = 'width: 15rem;'>
+                                <li>Accessibility</li> 
+                                <li>Languages</li> 
+                                <li>Privacy Policy</li> 
+                                <li>Press Room</li> 
+                                <li>Careers</li> 
+                                <li>Blogs</li> 
+                            </div>
+                            <div style = 'width: 26rem;'>
+                                <li>SAATHI</li> 
+                                <li>NIDHI</li> 
+                                <li>UTSAV</li> 
+                                <li>INCREDIBLE INDIA FILM</li>
+                            </div>
+                        </ul>
+                    </div>
+                    <div class = 'destination_box2'>
+                        <ul>
+                            <li>Join our newsletter</li>
+                            <li><button class = 'button'><a href ='/our_newsletter'>SUBSCRIBE</a></button></li>
+                            <br>
+                            <li>Connect with us:</li>
+                            <li>
+                                <div class = 'contact'>
+                                    <a class = 'con_icons' href = '#'>
+                                    <i class="fa-brands fa-facebook-f"></i></a>
+                                    <a class = 'con_icons' href = '#'>
+                                    <i class="fa-brands fa-instagram"></i></a>
+                                    <a class = 'con_icons' href = '#'>
+                                    <i class="fa-brands fa-x-twitter"></i></a>
+                                    <a class = 'con_icons' href = '#'>
+                                    <i class="fa-brands fa-youtube"></i></a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <p>Loyalty Programs +</p>
+                <hr style="width: 90%; height: .2px; border: none; background-color: #606060;">
+                <div class = 'f-brand'>
+                    <div class = 'hotel'>
+                        <img src = 'static\images\brand_logo.png' width = 90px height = 37px>
+                        <p> The Indian Hotels Company Limited.</p>
+                    </div>
+                    <div class = 'brand_name'>
+                        <p style = 'margin-bottom: 0;'>Our Brands:</p>
+                        <div class = 'footer_logo'>
+                            <div class = 'f-images'>
+                                <img src='static\images\hotel_logo.png' height = '30px' width = '37px'>
+                            </div>
+                            <div class = 'f-images' style = 'padding-top: .8%;'>
+                                <img src='static\images\logo2_noback.png' height = '32px' width = '85px'>
+                            </div>
+                            <div class = 'f-images' style = 'padding-top: 1.3%;'>
+                                <img src='static\images\logo3_noback.png' height = '20px' width = '68px'>
+                            </div>
+                            <div class = 'f-images'>
+                                <img src='static\images\logo4_noback.png' height = '35px' width = '69px'>
+                            </div>
+                            <div class = 'f-images'></div>
+                                <img src='static\images\logo7.png' height = '33px' width= '65px'>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script type = 'text/javascript' src = "{{url_for('static',filename = 'script/script_awards.js') }}"></script>
+</html> 
