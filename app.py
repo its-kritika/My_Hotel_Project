@@ -1,11 +1,16 @@
 from flask import Flask, render_template, request, jsonify
 from flask_sqlalchemy import SQLAlchemy
+from dotenv import load_dotenv
+import os
 
 app = Flask(__name__)   
 '''see here, we didn't mention (template_folder = 'template') bcoz by default render_template searches in 'templates'
    folder, which we have already created but in app.py it was 'template' folder and not 'templates', remember that s  '''
+load_dotenv()
 
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:''@localhost:3307/hotel_management' 
+# Get the database URI from the environment variable
+database_uri = os.getenv('DATABASE_URL')
+app.config['SQLALCHEMY_DATABASE_URI'] = database_uri
 #this line is mainly to connect to the mysql, similar to we do in python by providing username, password, etc.
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)  #initialisation
